@@ -1,0 +1,20 @@
+{
+  "version": "2015.2.3",
+  "master_install_location": "local",
+  "master_hostname": "wbench.lab.local",
+  "master_alt_names": "puppet",
+  "database": "install_postgres",
+  "console_password": "removed",
+  "splat": [
+
+  ],
+  "captures": [
+    "monolithic"
+  ],
+  "type": "monolithic",
+  "puppetdb_database_password": "removed",
+  "rbac_database_password": "removed",
+  "classifier_database_password": "removed",
+  "activity_database_password": "removed",
+  "database_password": "removed"
+}

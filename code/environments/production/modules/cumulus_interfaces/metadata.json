@@ -1,0 +1,18 @@
+{
+  "name": "cumuluslinux-cumulus_interfaces",
+  "version": "1.2.1",
+  "author": "Cumulus Networks",
+  "summary": "Configures Cumulus Linux interfaces",
+  "license": "GPLv2",
+  "source": "https://github.com/CumulusNetworks/cumulus-cl-interfaces-puppet",
+  "project_page": "https://github.com/CumulusNetworks/cumulus-cl-interfaces-puppet",
+  "issues_url": "https://github.com/CumulusNetworks/cumulus-cl-interfaces-puppet",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CumulusLinux"
+    }
+  ],
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 3.2.0 < 5.0.0"}
+  ]
+}

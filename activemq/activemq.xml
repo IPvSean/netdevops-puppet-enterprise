@@ -1,0 +1,71 @@
+<!--
+    Centrally managed by Puppet version 4.2.3
+    For details on this file, visit https://docs.puppetlabs.com/mcollective/deploy/middleware/activemq.html
+-->
+<beans
+  xmlns="http://www.springframework.org/schema/beans"
+  xmlns:amq="http://activemq.apache.org/schema/core"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+    http://activemq.apache.org/schema/core
+    http://activemq.apache.org/schema/core/activemq-core.xsd
+    http://activemq.apache.org/camel/schema/spring
+    http://activemq.apache.org/camel/schema/spring/camel-spring.xsd">
+
+    <!-- Allows us to use system properties as variables in this configuration file -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+          <value>file:${activemq.base}/conf/credentials.properties</value>
+        </property>
+    </bean>
+
+    <!--
+        The <broker> element is used to configure the ActiveMQ broker.
+    -->
+    
+    <!--
+      Enable web consoles, REST and Ajax APIs and demos
+      It also includes Camel (with its web console), see ${ACTIVEMQ_HOME}/conf/camel.xml for more info
+
+      Take a look at ${ACTIVEMQ_HOME}/conf/jetty.xml for more details
+    -->
+    
+<broker brokerName="wbench.lab.local" xmlns="http://activemq.apache.org/schema/core" dataDirectory="${activemq.base}/data" persistent="false" useJmx="true"><sslContext><sslContext keyStorePassword="puppet" keyStore="file:${activemq.base}/conf/broker.ks" trustStorePassword="puppet" trustStore="file:${activemq.base}/conf/broker.ts"></sslContext>
+</sslContext>
+<managementContext><managementContext createConnector="false"></managementContext>
+</managementContext>
+<destinationPolicy><policyMap><policyEntries><policyEntry topic=">" producerFlowControl="false" gcInactiveDestinations="false" memoryLimit="5mb"></policyEntry>
+<policyEntry queue=">" producerFlowControl="false" gcInactiveDestinations="false" memoryLimit="20mb"></policyEntry>
+<policyEntry queue="*.reply.>" producerFlowControl="true" gcInactiveDestinations="true" inactiveTimoutBeforeGC="300000"></policyEntry>
+</policyEntries>
+</policyMap>
+</destinationPolicy>
+<transportConnectors><transportConnector name="openwire" uri="ssl://0.0.0.0:61616?transport.enabledProtocols=TLSv1,TLSv1.1,TLSv1.2"></transportConnector>
+<transportConnector name="stomp+ssl" uri="stomp+ssl://0.0.0.0:61613?transport.enabledProtocols=TLSv1,TLSv1.1,TLSv1.2"></transportConnector>
+</transportConnectors>
+<plugins><statisticsBrokerPlugin></statisticsBrokerPlugin>
+<timeStampingBrokerPlugin futureOnly="false" ttlCeiling="0" zeroExpirationOverride="30000"></timeStampingBrokerPlugin>
+<simpleAuthenticationPlugin><users><authenticationUser username="mcollective" password="k3DxNJYjTus9BleYUYJI" groups="mcollective,admins,everyone"></authenticationUser>
+</users>
+</simpleAuthenticationPlugin>
+<authorizationPlugin><map><authorizationMap><authorizationEntries><authorizationEntry queue=">" admin="admins" read="admins" write="admins"></authorizationEntry>
+<authorizationEntry topic=">" admin="admins" read="admins" write="admins"></authorizationEntry>
+<authorizationEntry queue="mcollective.>" admin="mcollective" read="mcollective" write="mcollective"></authorizationEntry>
+<authorizationEntry topic="mcollective.>" admin="mcollective" read="mcollective" write="mcollective"></authorizationEntry>
+<authorizationEntry topic="ActiveMQ.Advisory.>" admin="everyone" read="everyone" write="everyone"></authorizationEntry>
+</authorizationEntries>
+</authorizationMap>
+</map>
+</authorizationPlugin>
+</plugins>
+<systemUsage><systemUsage><memoryUsage><memoryUsage limit="200mb"></memoryUsage>
+</memoryUsage>
+<storeUsage><storeUsage limit="1gb"></storeUsage>
+</storeUsage>
+<tempUsage><tempUsage limit="1gb"></tempUsage>
+</tempUsage>
+</systemUsage>
+</systemUsage>
+</broker>
+</beans>

@@ -1,0 +1,9 @@
+HOSTS:
+  cumulus-vx-2.5.3:
+    roles:
+      - master
+    platform: debian-253-amd64
+    box: cumulus-vx-2.5.3
+    hypervisor: vagrant
+CONFIG:
+  type: foss

@@ -1,0 +1,304 @@
+---
+aio_agent_build: 1.2.7
+aio_agent_version: 1.2.7
+architecture: amd64
+augeas:
+  version: 1.4.0
+augeasversion: 1.4.0
+bios_release_date: 01/01/2011
+bios_vendor: Bochs
+bios_version: Bochs
+blockdevice_fd0_size: 0
+blockdevice_sda_model: QEMU HARDDISK
+blockdevice_sda_size: 8589934592
+blockdevice_sda_vendor: ATA
+blockdevice_vda_size: 374784
+blockdevice_vda_vendor: '0x1af4'
+blockdevices: fd0,sda,vda
+chassistype: Other
+custom_auth_conf: 'false'
+dhcp_servers:
+  eth0: 10.0.0.2
+  system: 10.0.0.2
+disks:
+  fd0:
+    size: 0 bytes
+    size_bytes: 0
+  sda:
+    model: QEMU HARDDISK
+    size: 8.00 GiB
+    size_bytes: 8589934592
+    vendor: ATA
+  vda:
+    size: 366.00 KiB
+    size_bytes: 374784
+    vendor: '0x1af4'
+dmi:
+  bios:
+    release_date: 01/01/2011
+    vendor: Bochs
+    version: Bochs
+  chassis:
+    type: Other
+  manufacturer: Bochs
+  product:
+    name: Bochs
+domain: localdomain
+facterversion: 3.1.1
+filesystems: ext2,ext3,ext4,iso9660,vfat
+fqdn: wbenchvm.localdomain
+gid: root
+hardwareisa: x86_64
+hardwaremodel: x86_64
+hostname: wbenchvm
+id: root
+identity:
+  gid: 0
+  group: root
+  uid: 0
+  user: root
+interfaces: eth0,eth1,lo
+ipaddress: 10.0.0.1
+ipaddress6: fe80::2ec2:60ff:fe3d:2348
+ipaddress6_eth0: fe80::2ec2:60ff:fe3d:2348
+ipaddress6_eth1: fe80::2ec2:60ff:fe0d:8ddb
+ipaddress6_lo: "::1"
+ipaddress_eth0: 10.0.0.1
+ipaddress_eth1: 192.168.0.1
+ipaddress_lo: 127.0.0.1
+is_pe: false
+is_virtual: true
+kernel: Linux
+kernelmajversion: '3.16'
+kernelrelease: 3.16.0-31-generic
+kernelversion: 3.16.0
+load_averages:
+  15m: 0.15
+  1m: 0.17
+  5m: 0.14
+lsbdistcodename: trusty
+lsbdistdescription: Ubuntu 14.04.2 LTS
+lsbdistid: Ubuntu
+lsbdistrelease: '14.04'
+lsbmajdistrelease: '14.04'
+macaddress: 2c:c2:60:3d:23:48
+macaddress_eth0: 2c:c2:60:3d:23:48
+macaddress_eth1: 2c:c2:60:0d:8d:db
+manufacturer: Bochs
+memory:
+  system:
+    available: 1.34 GiB
+    available_bytes: 1435566080
+    capacity: 65.37%
+    total: 3.86 GiB
+    total_bytes: 4144939008
+    used: 2.52 GiB
+    used_bytes: 2709372928
+memoryfree: 1.34 GiB
+memoryfree_mb: 1369.0625
+memorysize: 3.86 GiB
+memorysize_mb: 3952.921875
+mountpoints:
+  "/":
+    available: 4.81 GiB
+    available_bytes: 5167480832
+    capacity: 38.63%
+    device: "/dev/sda1"
+    filesystem: ext4
+    options:
+    - rw
+    size: 7.84 GiB
+    size_bytes: 8420515840
+    used: 3.03 GiB
+    used_bytes: 3253035008
+mtu_eth0: 1500
+mtu_eth1: 1500
+mtu_lo: 65536
+netmask: 255.255.0.0
+netmask6: 'ffff:ffff:ffff:ffff::'
+netmask6_eth0: 'ffff:ffff:ffff:ffff::'
+netmask6_eth1: 'ffff:ffff:ffff:ffff::'
+netmask6_lo: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+netmask_eth0: 255.255.0.0
+netmask_eth1: 255.255.0.0
+netmask_lo: 255.0.0.0
+network: 10.0.0.0
+network6: 'fe80::'
+network6_eth0: 'fe80::'
+network6_eth1: 'fe80::'
+network6_lo: "::1"
+network_eth0: 10.0.0.0
+network_eth1: 192.168.0.0
+network_lo: 127.0.0.0
+networking:
+  dhcp: 10.0.0.2
+  domain: localdomain
+  fqdn: wbenchvm.localdomain
+  hostname: wbenchvm
+  interfaces:
+    eth0:
+      bindings:
+      - address: 10.0.0.1
+        netmask: 255.255.0.0
+        network: 10.0.0.0
+      bindings6:
+      - address: fe80::2ec2:60ff:fe3d:2348
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      dhcp: 10.0.0.2
+      ip: 10.0.0.1
+      ip6: fe80::2ec2:60ff:fe3d:2348
+      mac: 2c:c2:60:3d:23:48
+      mtu: 1500
+      netmask: 255.255.0.0
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network: 10.0.0.0
+      network6: 'fe80::'
+    eth1:
+      bindings:
+      - address: 192.168.0.1
+        netmask: 255.255.0.0
+        network: 192.168.0.0
+      bindings6:
+      - address: fe80::2ec2:60ff:fe0d:8ddb
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      ip: 192.168.0.1
+      ip6: fe80::2ec2:60ff:fe0d:8ddb
+      mac: 2c:c2:60:0d:8d:db
+      mtu: 1500
+      netmask: 255.255.0.0
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network: 192.168.0.0
+      network6: 'fe80::'
+    lo:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      bindings6:
+      - address: "::1"
+        netmask: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+        network: "::1"
+      ip: 127.0.0.1
+      ip6: "::1"
+      mtu: 65536
+      netmask: 255.0.0.0
+      netmask6: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+      network: 127.0.0.0
+      network6: "::1"
+  ip: 10.0.0.1
+  ip6: fe80::2ec2:60ff:fe3d:2348
+  mac: 2c:c2:60:3d:23:48
+  mtu: 1500
+  netmask: 255.255.0.0
+  netmask6: 'ffff:ffff:ffff:ffff::'
+  network: 10.0.0.0
+  network6: 'fe80::'
+  primary: eth0
+operatingsystem: Ubuntu
+operatingsystemmajrelease: '14.04'
+operatingsystemrelease: '14.04'
+os:
+  architecture: amd64
+  distro:
+    codename: trusty
+    description: Ubuntu 14.04.2 LTS
+    id: Ubuntu
+    release:
+      full: '14.04'
+      major: '14.04'
+  family: Debian
+  hardware: x86_64
+  name: Ubuntu
+  release:
+    full: '14.04'
+    major: '14.04'
+  selinux:
+    enabled: false
+osfamily: Debian
+partitions:
+  "/dev/sda1":
+    filesystem: ext4
+    label: cloudimg-rootfs
+    mount: "/"
+    size: 8.00 GiB
+    size_bytes: 8588886016
+    uuid: 9c20e6c2-fd34-40a5-aa3c-6d2fb6e66ffd
+path: "/usr/bin:/bin:/usr/sbin:/sbin"
+pe_build: 2015.2.3
+pe_concat_basedir: "/opt/puppetlabs/puppet/cache/pe_concat"
+pe_server_version: 2015.2.3
+physicalprocessorcount: 4
+platform_symlink_writable: true
+platform_tag: ubuntu-14.04-amd64
+processor0: Intel(R) Xeon(R) CPU @ 2.50GHz
+processor1: Intel(R) Xeon(R) CPU @ 2.50GHz
+processor2: Intel(R) Xeon(R) CPU @ 2.50GHz
+processor3: Intel(R) Xeon(R) CPU @ 2.50GHz
+processorcount: 4
+processors:
+  count: 4
+  isa: x86_64
+  models:
+  - Intel(R) Xeon(R) CPU @ 2.50GHz
+  - Intel(R) Xeon(R) CPU @ 2.50GHz
+  - Intel(R) Xeon(R) CPU @ 2.50GHz
+  - Intel(R) Xeon(R) CPU @ 2.50GHz
+  physicalcount: 4
+productname: Bochs
+puppet_files_dir_present: false
+puppet_vardir: "/opt/puppetlabs/puppet/cache"
+puppetversion: 4.2.3
+root_home: "/root"
+ruby:
+  platform: x86_64-linux
+  sitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
+  version: 2.1.7
+rubyplatform: x86_64-linux
+rubysitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
+rubyversion: 2.1.7
+selinux: false
+ssh:
+  dsa:
+    fingerprints:
+      sha1: SSHFP 2 1 aeecff67677314647729f0eadbbaf5425f199b54
+      sha256: SSHFP 2 2 80afffb5ff86f84257162ce80d09edccb41441d5419bd6724e23be4ac821ae1c
+    key: AAAAB3NzaC1kc3MAAACBAJ0+lJyGuh4u1VvV7gHpXq4/hVsJ3ia/0ajT/J32zAlyDra1qnjksIBC1FVaOhfaa/cWvoSjP6Svp+dC7xcxrC+uQFljAWBLGts4Feg9eReokWUOZBC6qXdnSOLyZuE4V0sv+/zrRbYI80ekJ0J2Va9T60GK12rn/aTsyl1NhmT1AAAAFQCfKT0e+pcoDd8Eoxdiq3Hfe7KUJwAAAIAXBVAAx0BSRj/qWpayCVeXVR3yQAhzUcgBnCyHca4sMEF0glQK16zdoM1DpUd3/ttJZArcM8jqJBy0vSZQd3X4Shxz3yx9gRBDtggi6GWatmWCnXTQyAI0TkgA/+xKVzeJS+gOjOTO5LFTXXv4klFa5G4OtNKJLeJVDTsXAiyxggAAAIBak23yD6f4YO+QhS50nisZJ3KOhJjta23+Ez1TgN0BSHPHbJG5ck19yGfvDCOw/tatiZKVhi0eWZlL193NcK8cCPxtjTyBBkeos5L7CNwdEtZZn/RZXs0lIzOkMWbFSg/wEoQqkzDJ3hB25rliJoivcGiyr1BkxEWxdyJF5JiOMQ==
+  ecdsa:
+    fingerprints:
+      sha1: SSHFP 3 1 cd6ce57b659d3a68051156a010ac69d035b4d986
+      sha256: SSHFP 3 2 7019fedae6f5eb88b13792cb158af19332bc97c59c9aa08f30f7d3b61160a0fb
+    key: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLy97elw1iNsEobP9y2Fh8tOgAapMcIU7SBOA/NlquYAXEb40r1kPIsJ6sHqGeDpzj3lsGbpcpgw8M1LReqIcQk=
+  rsa:
+    fingerprints:
+      sha1: SSHFP 1 1 a9dbc4f82d5e82368d81455c8edb27f425406f64
+      sha256: SSHFP 1 2 d6671576da732ca81a11731213819290fe46cefabda9f2e529b3688f56017911
+    key: AAAAB3NzaC1yc2EAAAADAQABAAABAQClopOXEfBP317Uqm9inmyGBSEtYXYiYa1l+CC3yi/jkw9uJMX3af2UMUfqb0n6A6rYlJqkbgJrPVwmbEz9VQBO5VrzChVFP1Edi339sGbYJZLKckItVbDDrMuCB6Zeg/NcpRjjautt2MudCRlCHveJrnm2vCOxE9AUcdGRqpp8YAEogFTq4qda3EIo8CKdHwxUammvWINHAcsf/E8E5Md0SpfDgYAl/ZzRHvXj/oq+jq9KHktitPZYQ4hsA5KKW3o2JHp1m3wcCiOGAaNIdSZ7O/mMpO5OX5/HuVk4p3VF/jz2ZKZw8omusX53Ak2tubIeS1LvvP4fl6Q1ANptLRSN
+sshdsakey: AAAAB3NzaC1kc3MAAACBAJ0+lJyGuh4u1VvV7gHpXq4/hVsJ3ia/0ajT/J32zAlyDra1qnjksIBC1FVaOhfaa/cWvoSjP6Svp+dC7xcxrC+uQFljAWBLGts4Feg9eReokWUOZBC6qXdnSOLyZuE4V0sv+/zrRbYI80ekJ0J2Va9T60GK12rn/aTsyl1NhmT1AAAAFQCfKT0e+pcoDd8Eoxdiq3Hfe7KUJwAAAIAXBVAAx0BSRj/qWpayCVeXVR3yQAhzUcgBnCyHca4sMEF0glQK16zdoM1DpUd3/ttJZArcM8jqJBy0vSZQd3X4Shxz3yx9gRBDtggi6GWatmWCnXTQyAI0TkgA/+xKVzeJS+gOjOTO5LFTXXv4klFa5G4OtNKJLeJVDTsXAiyxggAAAIBak23yD6f4YO+QhS50nisZJ3KOhJjta23+Ez1TgN0BSHPHbJG5ck19yGfvDCOw/tatiZKVhi0eWZlL193NcK8cCPxtjTyBBkeos5L7CNwdEtZZn/RZXs0lIzOkMWbFSg/wEoQqkzDJ3hB25rliJoivcGiyr1BkxEWxdyJF5JiOMQ==
+sshecdsakey: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLy97elw1iNsEobP9y2Fh8tOgAapMcIU7SBOA/NlquYAXEb40r1kPIsJ6sHqGeDpzj3lsGbpcpgw8M1LReqIcQk=
+sshfp_dsa: |-
+  SSHFP 2 1 aeecff67677314647729f0eadbbaf5425f199b54
+  SSHFP 2 2 80afffb5ff86f84257162ce80d09edccb41441d5419bd6724e23be4ac821ae1c
+sshfp_ecdsa: |-
+  SSHFP 3 1 cd6ce57b659d3a68051156a010ac69d035b4d986
+  SSHFP 3 2 7019fedae6f5eb88b13792cb158af19332bc97c59c9aa08f30f7d3b61160a0fb
+sshfp_rsa: |-
+  SSHFP 1 1 a9dbc4f82d5e82368d81455c8edb27f425406f64
+  SSHFP 1 2 d6671576da732ca81a11731213819290fe46cefabda9f2e529b3688f56017911
+sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQClopOXEfBP317Uqm9inmyGBSEtYXYiYa1l+CC3yi/jkw9uJMX3af2UMUfqb0n6A6rYlJqkbgJrPVwmbEz9VQBO5VrzChVFP1Edi339sGbYJZLKckItVbDDrMuCB6Zeg/NcpRjjautt2MudCRlCHveJrnm2vCOxE9AUcdGRqpp8YAEogFTq4qda3EIo8CKdHwxUammvWINHAcsf/E8E5Md0SpfDgYAl/ZzRHvXj/oq+jq9KHktitPZYQ4hsA5KKW3o2JHp1m3wcCiOGAaNIdSZ7O/mMpO5OX5/HuVk4p3VF/jz2ZKZw8omusX53Ak2tubIeS1LvvP4fl6Q1ANptLRSN
+staging_http_get: curl
+system_uptime:
+  days: 0
+  hours: 0
+  seconds: 2593
+  uptime: 0:43 hours
+timezone: UTC
+uptime: 0:43 hours
+uptime_days: 0
+uptime_hours: 0
+uptime_seconds: 2593
+virtual: kvm
+clientcert: wbench.lab.local
+clientversion: 4.2.3
+clientnoop: false

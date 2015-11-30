@@ -1,0 +1,3 @@
+server: wbench.lab.local
+port: 4433
+prefix: /classifier-api
