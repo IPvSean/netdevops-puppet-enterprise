@@ -1,6 +1,8 @@
 # netdevops-puppet-enterprise
 Using Puppet Enterprise as a SDN controller to automate several pieces of a modern data center network in a leaf spine configuration.  This demonstration was used at Puppet Camp Tampa (Dec 1, 2015) and Puppet Camp Atlanta (Dec 3, 2015) "Using Devops Tools For Modern Data Centers" by Sean Cavanaugh on October 19, 2015.  
 
+Full pptx is downloadable for free here: https://cumulusnetworks.box.com/puppetcamp-netdevops-december
+
 ##Topology
 Here is the topology for the demonstration:
 
