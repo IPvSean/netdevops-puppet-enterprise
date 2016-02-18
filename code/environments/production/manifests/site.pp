@@ -3,6 +3,7 @@ node 'spine1.lab.local' {
     $int_loopback = '3.3.3.3'
     $int_unnumbered = [ 'swp1', 'swp2', 'swp3', 'swp4', 'swp5', 'swp6' ]
     include ospfunnum::role::switchbase
+    include mcollective::client
 }
 
 node 'spine2.lab.local' {

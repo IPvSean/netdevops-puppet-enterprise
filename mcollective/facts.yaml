@@ -73,9 +73,9 @@ kernelmajversion: '3.16'
 kernelrelease: 3.16.0-31-generic
 kernelversion: 3.16.0
 load_averages:
-  15m: 0.15
-  1m: 0.17
-  5m: 0.14
+  15m: 0.65
+  1m: 0.23
+  5m: 1.08
 lsbdistcodename: trusty
 lsbdistdescription: Ubuntu 14.04.2 LTS
 lsbdistid: Ubuntu
@@ -87,30 +87,30 @@ macaddress_eth1: 2c:c2:60:0d:8d:db
 manufacturer: Bochs
 memory:
   system:
-    available: 1.34 GiB
-    available_bytes: 1435566080
-    capacity: 65.37%
+    available: 1.60 GiB
+    available_bytes: 1720025088
+    capacity: 58.50%
     total: 3.86 GiB
     total_bytes: 4144939008
-    used: 2.52 GiB
-    used_bytes: 2709372928
-memoryfree: 1.34 GiB
-memoryfree_mb: 1369.0625
+    used: 2.26 GiB
+    used_bytes: 2424913920
+memoryfree: 1.60 GiB
+memoryfree_mb: 1640.34375
 memorysize: 3.86 GiB
 memorysize_mb: 3952.921875
 mountpoints:
   "/":
-    available: 4.81 GiB
-    available_bytes: 5167480832
-    capacity: 38.63%
+    available: 4.80 GiB
+    available_bytes: 5151236096
+    capacity: 38.83%
     device: "/dev/sda1"
     filesystem: ext4
     options:
     - rw
     size: 7.84 GiB
     size_bytes: 8420515840
-    used: 3.03 GiB
-    used_bytes: 3253035008
+    used: 3.04 GiB
+    used_bytes: 3269279744
 mtu_eth0: 1500
 mtu_eth1: 1500
 mtu_lo: 65536
@@ -291,13 +291,13 @@ staging_http_get: curl
 system_uptime:
   days: 0
   hours: 0
-  seconds: 2593
-  uptime: 0:43 hours
+  seconds: 430
+  uptime: 0:07 hours
 timezone: UTC
-uptime: 0:43 hours
+uptime: 0:07 hours
 uptime_days: 0
 uptime_hours: 0
-uptime_seconds: 2593
+uptime_seconds: 430
 virtual: kvm
 clientcert: wbench.lab.local
 clientversion: 4.2.3
