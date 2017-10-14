@@ -3,21 +3,19 @@ Using Puppet Enterprise as a SDN controller to automate several pieces of a mode
 
 Full pptx is downloadable for free here: https://cumulusnetworks.box.com/puppetcamp-netdevops-december
 
-##Topology
+## Topology
 Here is the topology for the demonstration:
 
 ![Topology](https://raw.githubusercontent.com/seanx820/netdevops/master/topology.png)
 
-##Manifest descriptions
+## Manifest descriptions
 - /etc/puppetlabs/code/environment/production/manifests/site.pp - this is the main manifest to provision the network with [OSPF Unnumbered](http://docs.cumulusnetworks.com/display/CL25/Open+Shortest+Path+First+-+OSPF+-+Protocol).  Each node is given a single IP address instead of burning (using up) an IP address per link.
 - /etc/puppetlabs/code/environment/spine2swap/manifests/site.pp - this manifest runs when spine2 (4.4.4.4) has been identified to have a bad fan
 
-##Contributing
+## Contributing
 Make pull requests at any time, just leave descriptions... this is more of a sandbox.  Please email me at sean @ cumulusnetworks.com if you want more information or demos to play with.  We have heaps on our [Demo Website](https://support.cumulusnetworks.com/hc/en-us/sections/200398866)
 
 ***
-
-![Cumulus icon](http://cumulusnetworks.com/static/cumulus/img/logo_2014.png)
 
 ### Cumulus Linux
 
